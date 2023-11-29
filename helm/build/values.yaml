@@ -1,0 +1,15 @@
+app:
+  name: kblase-poi-map-app
+  namespace: kblase
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/kblase-frontend
+  org: rhdh23-lab
+  name: kblase-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kblase/poi-map-app
+  tag: latest
